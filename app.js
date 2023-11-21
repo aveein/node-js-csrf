@@ -35,6 +35,7 @@ const {
     doubleCsrfProtection, // This is the default CSRF protection middleware.
   } = doubleCsrf({
     getSecret: () => "Secret", // A function that optionally takes the request and returns a secret
+    cookieName: "psifi.x-csrf-token", //this is for http and add __Host for development put it in a .env file for solving conflict in dev 
     cookieOptions: {
       
         secure : false,

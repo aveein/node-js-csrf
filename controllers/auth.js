@@ -68,7 +68,7 @@ exports.postSignUp = (req,res,next)=>{
 }
 
 exports.postLogin = (req,res,next)=>{
-    console.log('sdfsdf');
+   
      const email = req.body.email;
      const password = req.body.password;
      
